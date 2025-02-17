@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9800, #ff5722);
+            color: white;
+            text-align: center;
+        }
+
+        /* Navigation Bar */
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background 0.3s;
+        }
+
+        .nav a:hover {
+            background: #ffcc00;
+            color: black;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://a.travel-assets.com/findyours-php/viewfinder/images/res70/101000/101713-Chennai-And-Vicinity.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        /* Gallery Grid */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Larger Images */
+            gap: 30px;
+            padding: 50px;
+        }
+
+        .gallery-container img {
+            width: 100%;
+            height: 400px; /* Increased Height */
+            object-fit: cover; /* Ensures the image covers the entire box */
+            border-radius: 10px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.08);
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Lightbox Effect */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 95%; /* Increased Lightbox Image Size */
+            max-height: 95%;
+            border-radius: 10px;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        /* Footer */
+        .footer {
+            background: black;
+            padding: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Gallery</h1>
+        <p>Explore the beauty of Chennai through these breathtaking images.</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+       <a href="Homepage.html" target="_blank">Home</a>
+        <a href="Heritage.html" target="_blank">Heritage</a>
+        <a href="HotelBooking.html" target="_blank">Hotel Booking</a>
+        <a href="Gallery.html" target="_blank">Gallery</a>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery-container">
+        <a href="#img1"><img src="Marina_Beach_as_seen_from_Light_house.jpg" alt="Marina Beach"></a>
+        <a href="#img2"><img src="shore-temple-india-sunset-sky-mamallapuram-tamil-nadu-34525923.jpg" alt="Shore Temple"></a>
+        <a href="#img3"><img src="shore-temple-640319518-58e3eaf25f9b58ef7e113e1f.jpg" alt="Shore Temple 2"></a>
+        <a href="#img4"><img src="08_ChennaiArchitecture__ChennaiCentralRailway_shutterstock_683393986.jpg" alt="Chennai Central"></a>
+        <a href="#img5"><img src="street-view-from-chennai-v0-1f32ugbv4cec1.jpg" alt="Chennai Street"></a> <!-- New Image -->
+        <a href="#img6"><img src="vivekananda-rock-memorial-1655195795_ac72566bd8720c988c09.jpg" alt="Vivekananda Rock Memorial"></a> <!-- New Image -->
+    </div>
+
+    <!-- Lightbox -->
+    <div id="img1" class="lightbox" onclick="location.href='#'">
+        <img src="Marina_Beach_as_seen_from_Light_house.jpg">
+    </div>
+    <div id="img2" class="lightbox" onclick="location.href='#'">
+        <img src="shore-temple-india-sunset-sky-mamallapuram-tamil-nadu-34525923.jpg">
+    </div>
+    <div id="img3" class="lightbox" onclick="location.href='#'">
+        <img src="shore-temple-640319518-58e3eaf25f9b58ef7e113e1f.jpg">
+    </div>
+    <div id="img4" class="lightbox" onclick="location.href='#'">
+        <img src="08_ChennaiArchitecture__ChennaiCentralRailway_shutterstock_683393986.jpg">
+    </div>
+    <div id="img5" class="lightbox" onclick="location.href='#'">
+        <img src="street-view-from-chennai-v0-1f32ugbv4cec1.jpg">
+    </div>
+    <div id="img6" class="lightbox" onclick="location.href='#'">
+        <img src="vivekananda-rock-memorial-1655195795_ac72566bd8720c988c09.jpg">
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 Explore Chennai | Designed for travelers</p>
+    </div>
+
+</body>
+</html>

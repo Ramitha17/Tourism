@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9800, #ff5722);
+            color: white;
+            text-align: center;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background 0.3s;
+        }
+
+        .nav a:hover {
+            background: #ffcc00;
+            color: black;
+        }
+
+        .hero {
+            background: url('heritage-banner.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+            max-width: 600px;
+        }
+
+        .heritage-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px;
+        }
+
+        .heritage-card {
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .heritage-card:hover {
+            transform: scale(1.05);
+        }
+
+        .heritage-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .heritage-card a {
+            display: block;
+            text-decoration: none;
+            color: #ff5722;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .heritage-card a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background: black;
+            padding: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Heritage Sites in Chennai</h1>
+        <p>Explore the rich historical and cultural heritage of Chennai.</p>
+    </div>
+    <div class="nav">
+        <a href="Homepage.html" target="_blank">Home</a>
+        <a href="Heritage.html" target="_blank">Heritage</a>
+        <a href="HotelBooking.html" target="_blank">Hotel Booking</a>
+        <a href="Gallery.html" target="_blank">Gallery</a>
+    </div>
+    <div class="heritage-container">
+        <div class="heritage-card">
+            <a href="MarinaBeach.html" target="_blank">
+                <img src="Marina-Beach-Aerial-view.jpg" alt="Marina Beach">
+            </a>
+            <h3>Marina Beach</h3>
+            <p>The world's second-longest urban beach and a symbol of Chennai.</p>
+            <a href="MarinaBeach.html" target="_blank">Learn More →</a>
+        </div>
+        <div class="heritage-card">
+            <a href="Mahabalipuram.html" target="_blank">
+                <img src="R.jpg" alt="Mahabalipuram">
+            </a>
+            <h3>Mahabalipuram</h3>
+            <p>Famous for its rock-cut temples and ancient Pallava architecture.</p>
+            <a href="Mahabalipuram.html" target="_blank">Learn More →</a>
+        </div>
+        <div class="heritage-card">
+            <a href="Kalakshetra.html" target="_blank">
+                <img src="R2.jpg" alt="Kalakshetra">
+            </a>
+            <h3>Kalakshetra</h3>
+            <p>A renowned cultural academy preserving Bharatanatyam and Carnatic music.</p>
+            <a href="Kalakshetra.html" target="_blank">Learn More →</a>
+        </div>
+        <div class="heritage-card">
+            <a href="SriParthasarathyTemple.html" target="_blank">
+                <img src="sri-parthasarathy-temple-1656080208_ca76096c2088e912b09a.jpg" alt="Sri Parthasarathy Temple">
+            </a>
+            <h3>Sri Parthasarathy Temple</h3>
+            <p>A historic Vishnu temple built in the 8th century.</p>
+            <a href="SriParthasarathyTemple.html" target="_blank">Learn More →</a>
+        </div>
+        <div class="heritage-card">
+            <a href="KapaleeshwararTemple.html" target="_blank">
+                <img src="kapaleeshwarar-temple-1656078500_97b56461f9ad05d3b236.jpg" alt="Kapaleeshwarar Temple">
+            </a>
+            <h3>Kapaleeshwarar Temple</h3>
+            <p>An iconic Dravidian-style temple dedicated to Lord Shiva.</p>
+            <a href="KapaleeshwararTemple.html" target="_blank">Learn More →</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2025 Explore Chennai | Discover the heritage of the city</p>
+    </div>
+
+</body>
+</html>
